@@ -40,7 +40,7 @@ export const Navigation: React.FC<NavigationProps> = ({
           <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={onHomeClick}
-              className="flex items-center space-x-2 text-sm font-medium hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+              className="flex items-center space-x-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
               <Home size={18} />
               <span>Home</span>
             </button>
@@ -51,7 +51,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   e.stopPropagation();
                   setIsProgramsOpen(!isProgramsOpen);
                 }}
-                className="flex items-center space-x-2 text-sm font-medium hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
+                className="flex items-center space-x-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
                 aria-expanded={isProgramsOpen}>
                 <Code2 size={18} />
                 <span>Programs</span>
@@ -77,7 +77,7 @@ export const Navigation: React.FC<NavigationProps> = ({
 
             <button
               onClick={onAboutClick}
-              className="flex items-center space-x-2 text-sm font-medium hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+              className="flex items-center space-x-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
               <User size={18} />
               <span>About</span>
             </button>
