@@ -28,14 +28,14 @@ export const Navigation: React.FC<NavigationProps> = ({
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isNavbarScrolled
-          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm"
+          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-white/10 shadow-sm"
           : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <h1 className="text-xl font-bold tracking-tight">
-            <span className="text-brand-600 dark:text-brand-400">
-              DSA Learning
+            <span className="bg-gradient-to-r from-brand-500 to-accent-500 bg-clip-text text-transparent">
+              Learning
             </span>{" "}
             <span className="text-slate-900 dark:text-white">Hub</span>
           </h1>
@@ -65,11 +65,11 @@ export const Navigation: React.FC<NavigationProps> = ({
               </button>
 
               {isProgramsOpen && (
-                <div className="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-surface-depth rounded-card shadow-xl py-2 border border-slate-200 dark:border-slate-800 ring-1 ring-black/5 animate-in fade-in slide-in-from-top-2 duration-200">
+                <div className="absolute top-full right-0 mt-2 w-56 bg-white dark:bg-surface-depth rounded-card shadow-xl py-2 border border-slate-200 dark:border-white/10 ring-1 ring-black/5 animate-in fade-in slide-in-from-top-2 duration-200">
                   {programs.map((program) => (
                     <button
                       key={program.href}
-                      className="w-full text-left px-4 py-2 text-sm hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
+                      className="w-full text-left px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-brand-50 dark:hover:bg-white/5 hover:text-brand-600 dark:hover:text-brand-400 transition-colors"
                       onClick={() => onProgramClick(program.name)}>
                       {program.name}
                     </button>
@@ -85,11 +85,11 @@ export const Navigation: React.FC<NavigationProps> = ({
               <span>About</span>
             </button>
 
-            <div className="h-6 w-px bg-slate-300 dark:bg-slate-700 mx-2" />
+            <div className="h-6 w-px bg-slate-300 dark:bg-white/15 mx-2" />
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-button text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-all active:scale-90"
+              className="p-2 rounded-button text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-50 dark:hover:bg-white/5 transition-all active:scale-90"
               aria-label="Toggle theme">
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>

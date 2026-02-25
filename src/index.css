@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --brand-primary: #0e94e9;
+    --brand-primary: #9333ea;
     --surface-light: #ffffff;
-    --surface-dark: #0f172a;
+    --surface-dark: #0c0a1a;
     --text-primary: #1e293b;
     --text-muted: #64748b;
   }
@@ -44,59 +44,55 @@
   }
 
   .btn-primary {
-    @apply btn bg-brand-600 text-white hover:bg-brand-700 shadow-sm;
+    @apply btn bg-gradient-to-r from-brand-600 to-brand-500 text-white hover:from-brand-700 hover:to-brand-600 shadow-md shadow-brand-500/25;
   }
 
   .btn-secondary {
-    @apply btn bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-surface-depth dark:text-slate-100 dark:hover:bg-slate-700;
+    @apply btn bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-white/10 dark:text-slate-100 dark:hover:bg-white/15 border border-slate-200 dark:border-white/10;
   }
 
   .card {
-    @apply bg-white dark:bg-surface-depth rounded-card border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden;
+    @apply bg-white dark:bg-surface-depth rounded-card border border-slate-200 dark:border-white/10 shadow-sm overflow-hidden;
   }
 
   .input {
-    @apply w-full px-4 py-2 rounded-button border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all;
+    @apply w-full px-4 py-2 rounded-button border border-slate-200 dark:border-white/10 bg-white dark:bg-surface-dark focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all;
   }
 }
 
 /* Custom Utilities for Design Consistency */
 @layer utilities {
   .glass {
-    @apply bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md border border-white/20 dark:border-slate-800;
+    @apply bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md border border-white/20 dark:border-white/10;
   }
 
   .bg-mesh {
     background-color: hsla(0, 0%, 100%, 1);
     background-image:
-      radial-gradient(at 0% 0%, hsla(210, 100%, 95%, 1) 0px, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(230, 100%, 95%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(270, 80%, 95%, 1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(290, 80%, 94%, 1) 0px, transparent 50%),
       radial-gradient(
         at 100% 100%,
-        hsla(250, 100%, 95%, 1) 0px,
+        hsla(40, 100%, 95%, 1) 0px,
         transparent 50%
       ),
-      radial-gradient(at 0% 100%, hsla(270, 100%, 95%, 1) 0px, transparent 50%);
+      radial-gradient(at 0% 100%, hsla(260, 80%, 95%, 1) 0px, transparent 50%);
   }
 
   .dark .bg-mesh {
-    background-color: hsla(220, 30%, 5%, 1);
+    background-color: hsla(260, 30%, 5%, 1);
     background-image:
-      radial-gradient(at 0% 0%, hsla(210, 100%, 10%, 0.5) 0px, transparent 50%),
+      radial-gradient(at 0% 0%, hsla(270, 100%, 12%, 0.6) 0px, transparent 50%),
       radial-gradient(
         at 100% 0%,
-        hsla(230, 100%, 10%, 0.5) 0px,
+        hsla(290, 100%, 10%, 0.5) 0px,
         transparent 50%
       ),
       radial-gradient(
         at 100% 100%,
-        hsla(250, 100%, 10%, 0.5) 0px,
+        hsla(40, 100%, 10%, 0.3) 0px,
         transparent 50%
       ),
-      radial-gradient(
-        at 0% 100%,
-        hsla(270, 100%, 10%, 0.5) 0px,
-        transparent 50%
-      );
+      radial-gradient(at 0% 100%, hsla(260, 100%, 8%, 0.5) 0px, transparent 50%);
   }
 }
