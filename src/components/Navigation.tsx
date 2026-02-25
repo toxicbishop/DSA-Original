@@ -35,9 +35,9 @@ export const Navigation: React.FC<NavigationProps> = ({
         <div className="flex items-center justify-between h-16">
           <h1 className="text-xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-brand-500 to-accent-500 bg-clip-text text-transparent">
-              Learning
+              DSA Learning
             </span>{" "}
-            <span className="text-slate-900 dark:text-white">Hub</span>
+            <span className="text-slate-800 dark:text-[#f5e6d3]">Hub</span>
           </h1>
 
           <div className="hidden md:flex items-center space-x-6">
