@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
-              DSA Study Hub
+              Learning Hub
             </h2>
             <p className="text-sm text-slate-500 dark:text-slate-400">
               Empowering engineers through algorithmic excellence.
