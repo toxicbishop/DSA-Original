@@ -40,7 +40,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode }) => {
         <div className="card p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200"
+              src="/assets/Profile.jpg"
               alt="Pranav Arun"
               className="w-40 h-40 rounded-card shadow-lg object-cover ring-4 ring-white dark:ring-slate-800"
             />
