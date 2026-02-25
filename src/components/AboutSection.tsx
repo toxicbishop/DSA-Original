@@ -1,16 +1,12 @@
 import React from "react";
-import { Briefcase, GraduationCap, MapPin, Mail } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
-interface AboutSectionProps {
-  darkMode: boolean;
-}
-
-export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode }) => {
+export const AboutSection: React.FC = () => {
   const skills = [
     "Data Structures",
     "Algorithms",
     "Problem Solving",
-    "C++",
+    "C",
     "Java",
     "Python",
     "System Design",
@@ -49,7 +45,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ darkMode }) => {
                 Pranav Arun
               </h2>
               <p className="text-lg text-brand-600 dark:text-brand-400 font-medium mb-4">
-                Computer Science Researcher & Educator
+                Computer Science Student at <br />
+                K. S. School of Engineering & Management
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 text-sm text-slate-600 dark:text-slate-400">
                 <div className="flex items-center gap-1.5">

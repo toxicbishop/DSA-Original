@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Navigation } from "./components/Navigation";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
@@ -10,9 +10,9 @@ import { Footer } from "./components/Footer";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
-  const [isModulesOpen, setIsModulesOpen] = useState(false);
+  const [_isModulesOpen, _setIsModulesOpen] = useState(false);
   const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
+  const [_activeSection, setActiveSection] = useState("hero");
   const [programOutput, setProgramOutput] = useState<string[]>([]);
   const [userInput, setUserInput] = useState("");
   const [currentStep, setCurrentStep] = useState(0);
@@ -38,13 +38,13 @@ function App() {
     replaceString: "",
   });
 
-  const [stack, setStack] = useState<string[]>(["#"]);
+  const [_stack, _setStack] = useState<string[]>(["#"]);
   const [stackElements, setStackElements] = useState<number[]>([]);
   const [stackTop, setStackTop] = useState(-1);
   const [stackMenuChoice, setStackMenuChoice] = useState(0);
   const [stackInput, setStackInput] = useState("");
-  const [infix, setInfix] = useState("");
-  const [postfix, setPostfix] = useState("");
+  const [_infix, setInfix] = useState("");
+  const [_postfix, setPostfix] = useState("");
 
   const handleHomeClick = () => {
     setShowAbout(false);
@@ -627,7 +627,7 @@ function App() {
           !showProgram11 &&
           !showProgram12 && <HeroSection />}
 
-        {showAbout && <AboutSection darkMode={darkMode} />}
+        {showAbout && <AboutSection />}
 
         {(showProgram1 ||
           showProgram2 ||
