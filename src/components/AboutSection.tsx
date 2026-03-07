@@ -36,7 +36,7 @@ export const AboutSection: React.FC = () => {
         <div className="card p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-12">
             <img
-              src="/assets/Profile.jpg"
+              src="/assets/profile-avatar.png"
               alt="Pranav Arun"
               className="w-40 h-40 rounded-card shadow-lg object-cover ring-4 ring-white dark:ring-slate-800"
             />
