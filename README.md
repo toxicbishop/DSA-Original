@@ -98,4 +98,4 @@ Feel free to fork this project and submit pull requests for any features or bug 
 
 ## 📄 License
 
-This project is private and intended for educational purposes at K. S. School of Engineering & Management.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
