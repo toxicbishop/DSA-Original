@@ -51,7 +51,7 @@ The platform follows a modern serverless architecture utilizing Supabase for Dat
 ### Prerequisites
 
 - Node.js (Latest LTS recommended)
-- npm or yarn
+- pnpm
 
 ### Installation
 
@@ -65,7 +65,7 @@ The platform follows a modern serverless architecture utilizing Supabase for Dat
 2. **Install dependencies**
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Configure Environment Variables**
@@ -78,7 +78,7 @@ The platform follows a modern serverless architecture utilizing Supabase for Dat
 
 4. **Run the development server**
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 ---
