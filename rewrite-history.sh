@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-git filter-branch --force --env-filter '
+git -c core.autocrlf=false filter-branch --force --env-filter '
 CORRECT_NAME="toxicbishop"
 CORRECT_EMAIL="pranavarun19@gmail.com"
 
